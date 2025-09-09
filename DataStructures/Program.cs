@@ -93,7 +93,7 @@ for (int i = 0; i < array3.Length; i++)
 Console.WriteLine(-1);
 
 //another way
-// WARNING! -> When try this way, please comment line 91 and 94.
+// WARNING! -> When try this way, Please comment line 91 and 93.
 
 int first = 0;
 int last = array3.Length - 1;
@@ -109,8 +109,65 @@ while (first <= last)
         first = mid + 1;
     else
         last = mid - 1;
-    
+
 }
 Console.WriteLine(-1);
+
+//WARNING ! When try following tasks, Please comment line 91,93,106,114.
+
+#endregion
+
+#region Task7
+
+int[] numbers = { -5, 3, 78, -90, -12, 25, 75 };
+for(int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > 0)
+        numbers[i] += 2;
+}
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.Write(numbers[i]+" ");
+}
+
+#endregion
+
+#region Task8
+
+int[] numbers1 = { 1, 2, 3, 2, 4, 2 };
+int number = 2;
+int count1 = 0;
+for(int i = 0; i < numbers1.Length; i++)
+{
+    if (numbers1[i] == number)
+          count1++;
+}
+Console.WriteLine("\n"+count1);
+
+#endregion
+
+#region Task9
+
+int[] array4 = {1, 2, 3, 4};
+for(int i = array4.Length - 1; i >= 0; i--)
+{
+    Console.Write(array4[i]+" ");
+}
+
+#endregion
+
+#region Task 10
+
+int[] array5 = { 44, 81, 13, 2, 11, 6, 20, 15, 10, 90 };
+int min = array5[0];
+for(int i = 1; i < array5.Length; i++)
+{
+    if (array5[i] < min)
+    {
+        min = array5[i];
+    }
+}
+Console.WriteLine("\n"+min);
 
 #endregion
